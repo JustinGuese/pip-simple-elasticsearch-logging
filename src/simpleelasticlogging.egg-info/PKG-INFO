@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: simpleelasticlogging
-Version: 0.0.4
+Version: 0.0.5
 Summary: A logger using Elasticsearch in the background with a focus on simplicity.
 Home-page: https://github.com/JustinGuese/pip-simple-elasticsearch-logging
 Author: Justin Guese
@@ -11,17 +11,18 @@ Description: Simple python pip package to log to elasticsearch.
         
         # Install
         
-        Hosted on PyPi now: https://pypi.org/project/simple-elastic-logging/0.1/
+        Hosted on PyPi now: https://pypi.org/project/simpleelasticlogging/
         
-        So just simply run `pip install simple-elastic-logging´
+        So just simply run `pip install simpleelasticlogging´
         
         Bleeding Edge version: 
+        
         `pip install git+https://github.com/JustinGuese/pip-simple-elasticsearch-logging´
         
         # Usage
         
         ```
-        from elasticlogger import ElasticLogger
+        from simpleelasticlogging import ElasticLogger
         el = Elasticlogger()
         
         def boundToFail():
