@@ -1,0 +1,1 @@
+from .simple-elastic-logging import ElasticLogger

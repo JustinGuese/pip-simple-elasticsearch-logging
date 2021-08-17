@@ -5,16 +5,16 @@ with open("README.md", "r") as fh:
 
 
 setuptools.setup(
-    name='simple-elastic-logging',  
+    name='simpleelasticlogging-pkg-JustinGuese',  
     version='0.1',
-    scripts=['simple-elastic-logging'] ,
     author="Justin Guese",
+    install_requires=['elasticsearch'],
     author_email="guese.justin@gmail.com",
     description="A logger using Elasticsearch in the background with a focus on simplicity.",
     long_description=long_description,
 long_description_content_type="text/markdown",
-    url="https://github.com/",
-    packages=setuptools.find_packages(),
+    url="https://github.com/JustinGuese/pip-simple-elasticsearch-logging",
+    packages=setuptools.find_packages(where="src"),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
