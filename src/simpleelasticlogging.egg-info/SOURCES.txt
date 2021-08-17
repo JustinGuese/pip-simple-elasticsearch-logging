@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/simpleelasticlogging/__init__.py
+src/simpleelasticlogging/simpleelasticlogging.py
+src/simpleelasticlogging.egg-info/PKG-INFO
+src/simpleelasticlogging.egg-info/SOURCES.txt
+src/simpleelasticlogging.egg-info/dependency_links.txt
+src/simpleelasticlogging.egg-info/requires.txt
+src/simpleelasticlogging.egg-info/top_level.txt
