@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: simpleelasticlogging
-Version: 0.0.8
+Version: 0.1.1
 Summary: A logger using Elasticsearch in the background with a focus on simplicity.
 Home-page: https://github.com/JustinGuese/pip-simple-elasticsearch-logging
 Author: Justin Guese

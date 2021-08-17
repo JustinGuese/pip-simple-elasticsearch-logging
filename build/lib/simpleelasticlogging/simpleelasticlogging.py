@@ -1,4 +1,5 @@
 from elasticsearch import Elasticsearch
+from elasticsearch.exceptions import RequestError
 from datetime import datetime
 import json
 
@@ -22,8 +23,18 @@ class ElasticLogger:
                 errordict = {"error" : errormessage}
         msg = {
             "app" : self.appname,
-            "timestamp" : datetime.utcnow(),
+            "timestamp" : datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S.%fZ"), # as string bc elastic doesnt like timestamp
         }
         errordict.update(msg)
-        res = self.es.index(index=self.errorindexname, body=errordict)
+        index = self.errorindexname + "-" + datetime.utcnow().strftime("%Y-%m")
+        try:
+            res = self.es.index(index=index, body=json.dumps(errordict))
+        except RequestError as e:
+            # most likely happening because flat errormesasge is not working
+            msg = {
+                "error" : errormessage,
+                "app" : self.appname,
+                "timestamp" : datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S.%fZ"), # as string bc elastic doesnt like timestamp
+            }
+            res = self.es.index(index=index, body=(msg))
         return res["result"]
