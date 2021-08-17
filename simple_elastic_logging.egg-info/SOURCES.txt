@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+simple_elastic_logging.egg-info/PKG-INFO
+simple_elastic_logging.egg-info/SOURCES.txt
+simple_elastic_logging.egg-info/dependency_links.txt
+simple_elastic_logging.egg-info/requires.txt
+simple_elastic_logging.egg-info/top_level.txt

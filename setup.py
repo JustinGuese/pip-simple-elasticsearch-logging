@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 
 setuptools.setup(
-    name='simpleelasticlogging-pkg-JustinGuese',  
+    name='simple-elastic-logging',  
     version='0.1',
     author="Justin Guese",
     install_requires=['elasticsearch'],
