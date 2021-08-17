@@ -3,17 +3,18 @@ The main focus of this package is simplicity, such that errorlogging becomes sup
 
 # Install
 
-Hosted on PyPi now: https://pypi.org/project/simple-elastic-logging/0.1/
+Hosted on PyPi now: https://pypi.org/project/simpleelasticlogging/
 
-So just simply run `pip install simple-elastic-logging´
+So just simply run `pip install simpleelasticlogging´
 
 Bleeding Edge version: 
+
 `pip install git+https://github.com/JustinGuese/pip-simple-elasticsearch-logging´
 
 # Usage
 
 ```
-from elasticlogger import ElasticLogger
+from simpleelasticlogging import ElasticLogger
 el = Elasticlogger()
 
 def boundToFail():
